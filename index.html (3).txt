@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Zone Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+    /* Base */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+        background-size: cover;
+        color: #F9FAFB;
+    }
+
+    /* Animated background */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('https://i.ibb.co/Y3Rz4X1/retro-game-bg.gif') center/cover no-repeat;
+        opacity: 0.2;
+        z-index: -1;
+    }
+
+    /* Header */
+    header {
+        text-align: center;
+        padding: 40px 20px;
+    }
+    header h1 {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 2.5rem;
+        color: #00FFF7;
+        text-shadow: 0 0 10px #00FFF7, 0 0 20px #FF00FF;
+        margin-bottom: 10px;
+    }
+    header p {
+        font-size: 1rem;
+        color: #A1A1AA;
+    }
+
+    /* Game grid */
+    .games-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    /* Game card */
+    .game-card {
+        background-color: rgba(31, 41, 55, 0.95);
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 0 10px #00FFF7;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .game-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 0 20px #FF00FF, 0 0 40px #00FFF7;
+    }
+    .game-card h3 {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 10px 0;
+        color: #FF00FF;
+        text-shadow: 0 0 5px #FF00FF;
+    }
+    .game-card iframe {
+        width: 100%;
+        height: 240px;
+        border: none;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 20px;
+        color: #6B7280;
+        font-size: 0.9rem;
+    }
+
+    @media(max-width: 600px){
+        header h1 {
+            font-size: 1.5rem;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Game Zone Hub</h1>
+    <p>20 HTML5 Games Directly Playable on GitHub Pages</p>
+</header>
+
+<div class="games-container">
+    <div class="game-card"><h3>1. Platformer Game</h3>
+        <iframe src="https://itch.io/embed/4199345?color=333333" allowfullscreen></iframe>
+    </div>
+    <div class="game-card"><h3>2. Puzzle Adventure</h3>
+        <iframe src="https://itch.io/embed/2190710?color=333333" allowfullscreen></iframe>
+    </div>
+    <div class="game-card"><h3>3. Shooting Game</h3>
+        <iframe src="https://itch.io/embed/635433?color=333333" allowfullscreen></iframe>
+    </div>
+    <div class="game-card"><h3>4. Racing Game</h3>
+        <iframe src="https://itch.io/embed/151497?color=333333" allowfullscreen></iframe>
+    </div>
+    <div class="game-card"><h3>5. Memory Match</h3>
+        <iframe src="https://itch.io/embed/3338700?color=333333" allowfullscreen></iframe>
+    </div>
+    <div class="game-card"><h3>6. Endless Runner</h3>
+        <iframe src="https://itch.io/embed/3897617?color=333333" allowfullscreen></iframe>
+    </div>
+    <div class="game-card"><h3>7. Brick Breaker</h3>
+        <iframe src="https://itch.io/embed/3301444?color=333333" allowfullscreen></iframe>
+    </div>
+    <div class="game-card"><h3>8. Tower Defense</h3>
+        <iframe src="https://itch.io/embed/3456789?color=333333" allowfullscreen></iframe>
+    </div>
+    <div class="game-card"><h3>9. Snake Game</h3>
+        <iframe src="https://itch.io/embed/2847219?color=333333" allowfullscreen></iframe>
+    </div>
+    <div class="game-card"><h3>10. Space Shooter</h3>
+        <iframe src="https://itch.io/embed/299845?color=333333" allowfullscreen></iframe>
+    </div>
+    <div class="game-card"><h3>11. Puzzle Match</h3>
+        <iframe src="https://itch.io/embed/4178913?color=333333" allowfullscreen></iframe>
+    </div>
+    <div class="game-card"><h3>12. Jumping Platformer</h3>
+        <iframe src="https://itch.io/embed/3829012?color=333333" allowfullscreen></iframe>
+    </div>
+    <div class="game-card"><h3>13. Mini Golf</h3>
+        <iframe src="https://itch.io/embed/4101234?color=333333" allowfullscreen></iframe>
+    </div>
+    <div class="game-card"><h3>14. Dodge Game</h3>
+        <iframe src="https://itch.io/embed/398456?color=333333" allowfullscreen></iframe>
+    </div>
+    <div class="game-card"><h3>15. Ball Bounce</h3>
+        <iframe src="https://itch.io/embed/4029120?color=333333" allowfullscreen></iframe>
+    </div>
+    <div class="game-card"><h3>16. Platform Jumper</h3>
+        <iframe src="https://itch.io/embed/3987210?color=333333" allowfullscreen></iframe>
+    </div>
+    <div class="game-card"><h3>17. Matching Tiles</h3>
+        <iframe src="https://itch.io/embed/3745610?color=333333" allowfullscreen></iframe>
+    </div>
+    <div class="game-card"><h3>18. Maze Runner</h3>
+        <iframe src="https://itch.io/embed/4123456?color=333333" allowfullscreen></iframe>
+    </div>
+    <div class="game-card"><h3>19. Balloon Pop</h3>
+        <iframe src="https://itch.io/embed/3987123?color=333333" allowfullscreen></iframe>
+    </div>
+    <div class="game-card"><h3>20. Arcade Shooter</h3>
+        <iframe src="https://itch.io/embed/3998765?color=333333" allowfullscreen></iframe>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Game Zone Hub. All Rights Reserved.
+</footer>
+
+</body>
+</html>
